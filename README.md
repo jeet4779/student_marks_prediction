@@ -20,7 +20,7 @@
 4. Open app.py and run command "python app.py" in the terminal
 5. You'll see a link in the terminal. Follow that link to access the web app.
 
- ![The web page](snip.png)
+ ![The web page](snip.PNG)
 
 
 
