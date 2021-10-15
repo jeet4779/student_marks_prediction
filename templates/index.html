@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>ML Web App-Sarvjeet Singh</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body>
+ <div class="login">
+    <div class="container">
+    <h1> Student Marks Analysis </h1>
+    <h2> By Sarvjeet Singh </h2>
+    
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="studytime" placeholder="Study Time" required="required" />
+        <input type="text" name="freetime" placeholder="Free Time" required="required" />
+        <input type="text" name="heath" placeholder="Health" required="required" />
+        <input type="text" name="g1" placeholder="First Exam Score" required="required" />
+        <input type="text" name="g2" placeholder="Second Exam Score" required="required" />
+        <input type="text" name="absences" placeholder="Absences" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+     </div>
+     
+    {{ prediction_text }} 
+  
+  
+
+ </div>
+
+
+</body>
+</html>
