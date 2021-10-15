@@ -2,7 +2,7 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>Student Marks Prediction</title>
+  <title>Students Mraks Prediction</title>
   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
@@ -14,16 +14,17 @@
 <body>
  <div class="login">
     <div class="container">
+
     <h1> Student Marks Prediction </h1>
     <h2> By GDSC ABES EC </h2>
     
     <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="studytime" placeholder="Study Time" required="required" />
-        <input type="text" name="freetime" placeholder="Free Time" required="required" />
-        <input type="text" name="heath" placeholder="Health" required="required" />
-        <input type="text" name="g1" placeholder="First Exam Score" required="required" />
-        <input type="text" name="g2" placeholder="Second Exam Score" required="required" />
-        <input type="text" name="absences" placeholder="Absences" required="required" />
+    	<input type="text" name="studytime" placeholder="Study Time(0-5)" required="required" />
+        <input type="text" name="freetime" placeholder="Free Time(0-5)" required="required" />
+        <input type="text" name="heath" placeholder="Health(0-5)" required="required" />
+        <input type="text" name="g1" placeholder="First Exam Score(0-20)" required="required" />
+        <input type="text" name="g2" placeholder="Second Exam Score(0-20)" required="required" />
+        <input type="text" name="absences" placeholder="Absences(0-20)" required="required" />
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
